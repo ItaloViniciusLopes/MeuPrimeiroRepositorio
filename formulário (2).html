@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<fieldset>
+		<legend>Contatos</legend>
+		<form action="" method="post" name="form_contatos">
+			<label for="assunto">Assunto:</label>
+			<input type="text" name="assunto" required placeholder="assunto"/>
+			<br/>
+			<label for="email">E-mail:</label>
+			<input type="email" name="email" required placeholder="email@exemple.com"/>
+			<br/>
+			<label for="mensagem">Mensagem</label>
+			<textarea name="mensagem" required placeholder="Digite sua mensagem..."></textarea>
+			<br/>
+			<fieldset>
+				<legend>Sexo</legend>
+				<input type="radio" name="sexo" value="M" required /><label for="sexo">Masculino</label>
+				<br/>
+				<input type="radio" name="sexo" value="F" required /><label for="sexo">Feminino</label>
+				<br/>
+			</fieldset>
+			<fieldset>
+				<legend> Escolaridade</legend>
+				<input type="checkbox" name="2grau" value="2grau"/><label for="2grau">2º Grau completo</label>
+				<br/>
+				<input type="checkbox" name="2grau_in" value="2grau_in"/><label for="2grau_in">2º Grau incompleto</label>
+				<br/>
+				<input type="checkbox" name="superior" value="superior"/><label for="superior">Ensino Superior</label>
+				<br/>
+				<input type="checkbox" name="pos" value="pos"/><label for="pos">Pós-Graduação</label>
+				<br/>
+			</fieldset>
+			<label for="estados">Estados: </label>
+			<select name="estados" required>
+				<option value="">Selecione um estado...</option>
+				<option value="AC">Acre</option>
+				<option value="SP">São Paulo</option>
+				<option value="MG">Minas Gerais</option>
+			</select>
+			<br/>
+			<input type="submit" name="enviar" value="Enviar" />
+			<input type="reset" name="limpar" value="Limpar" />
+		</form>
+	</fieldset>
+</body>
+</html>
